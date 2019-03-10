@@ -1,0 +1,18 @@
+### alienware configure shell collection ###
+
+------------------------------------------------
+
+#suspend on close lid
+
+sudo nano /etc/systemd/logind.conf
+
+HandleLidSwitch=suspend
+HandleLidSwitchExternalPower=suspend
+
+-------------------------------------------------
+
+#set brightness on intel
+
+xrandr --output eDP-1 --brightness 0.6
+
+-------------------------------------------------
